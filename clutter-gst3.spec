@@ -92,8 +92,8 @@ Standalone gstreamer plugin for %{name}.
 %dir %{_includedir}/clutter-gst-%{api}/%{name}
 %{_includedir}/clutter-gst-%{api}/%{name}/*.h
 %{_datadir}/gir-1.0/ClutterGst-%{api}.gir
-%dir %{_datadir}/gtk-doc/html/%{name}
-%doc %{_datadir}/gtk-doc/html/%{name}/*
+%dir %{_datadir}/gtk-doc/html/%{name}-%{api}
+%doc %{_datadir}/gtk-doc/html/%{name}-%{api}/*
 
 %files -n %{gstname}
 %{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
