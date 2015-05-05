@@ -6,12 +6,12 @@
 %define libname	%mklibname clutter-gst %{api} %{major}
 %define devname	%mklibname -d clutter-gst %{api}
 %define girname	%mklibname clutter-gst-gir %{api}
-%define gstname	gstreamer%{gstapi}-gstclutter
+%define gstname	gstreamer%{gstapi}-gstclutter3
 
 Summary:	GST video texture actor and audio player object for Clutter
-Name:		clutter-gst
+Name:		clutter-gst3
 Version:	3.0.4
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		Graphics
 Url:		http://clutter-project.org/
