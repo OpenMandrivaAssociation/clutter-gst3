@@ -1,4 +1,5 @@
 %define	url_ver	%(echo %{version} | cut -d. -f1,2)
+%define oname clutter-gst
 
 %define api	3.0
 %define major	0
@@ -15,7 +16,7 @@ Release:	2
 License:	LGPLv2+
 Group:		Graphics
 Url:		http://clutter-project.org/
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/%{url_ver}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	gtk-doc
 BuildRequires:	docbook-dtd412-xml
@@ -81,19 +82,19 @@ Standalone gstreamer plugin for %{name}.
 %makeinstall_std
 
 %files -n %{libname}
-%{_libdir}/lib%{name}-%{api}.so.%{major}*
+%{_libdir}/lib%{oname}-%{api}.so.%{major}*
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/ClutterGst-%{api}.typelib
 
 %files -n %{devname}
-%{_libdir}/pkgconfig/%{name}-%{api}.pc
-%{_libdir}/lib%{name}-%{api}.so
-%dir %{_includedir}/clutter-gst-%{api}/%{name}
-%{_includedir}/clutter-gst-%{api}/%{name}/*.h
+%{_libdir}/pkgconfig/%{oname}-%{api}.pc
+%{_libdir}/lib%{oname}-%{api}.so
+%dir %{_includedir}/clutter-gst-%{api}/%{oname}
+%{_includedir}/clutter-gst-%{api}/%{oname}/*.h
 %{_datadir}/gir-1.0/ClutterGst-%{api}.gir
-%dir %{_datadir}/gtk-doc/html/%{name}-%{api}
-%doc %{_datadir}/gtk-doc/html/%{name}-%{api}/*
+%dir %{_datadir}/gtk-doc/html/%{oname}-%{api}
+%doc %{_datadir}/gtk-doc/html/%{oname}-%{api}/*
 
 %files -n %{gstname}
 %{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
