@@ -69,7 +69,7 @@ Group:		System/Libraries
 Standalone gstreamer plugin for %{name}.
 
 %prep
-%setup -q
+%setup -qn %{oname}-%{version}
 
 %build
 %configure \
