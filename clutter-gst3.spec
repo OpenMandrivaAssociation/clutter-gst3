@@ -97,4 +97,4 @@ Standalone gstreamer plugin for %{name}.
 %doc %{_datadir}/gtk-doc/html/%{oname}-%{api}/*
 
 %files -n %{gstname}
-%{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
+#{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
