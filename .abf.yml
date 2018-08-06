@@ -1,4 +1,6 @@
 removed_sources:
   clutter-gst-3.0.4.tar.xz: 6afee9f200ac042b20df3f5e8d8288ab262c92fb
-sources:
   clutter-gst-3.0.14.tar.xz: 04bab7e078aeaf47d3cb0478bee1d17b89b91f93
+  
+sources:
+  clutter-gst-3.0.26.tar.xz: 48c7348e079505973c3ec58d089f0ce4469623e3
