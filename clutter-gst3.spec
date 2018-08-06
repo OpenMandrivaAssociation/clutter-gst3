@@ -98,5 +98,5 @@ Standalone gstreamer plugin for %{name}.
 
 %files -n %{gstname}
 #{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
-%{_libdir}/gstreamer-1.0/libcluttergst3.so-3.0*
+#{_libdir}/gstreamer-1.0/libcluttergst3.so-3.0*
 %{_libdir}/gstreamer-1.0/libcluttergst3.so
