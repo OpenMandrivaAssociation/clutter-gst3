@@ -11,7 +11,7 @@
 
 Summary:	GST video texture actor and audio player object for Clutter
 Name:		clutter-gst3
-Version:	3.0.14
+Version:	3.0.26
 Release:	1
 License:	LGPLv2+
 Group:		Graphics
@@ -97,4 +97,6 @@ Standalone gstreamer plugin for %{name}.
 %doc %{_datadir}/gtk-doc/html/%{oname}-%{api}/*
 
 %files -n %{gstname}
-%{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
+#{_libdir}/gstreamer-%{gstapi}/libgstclutter-%{api}.so
+#{_libdir}/gstreamer-1.0/libcluttergst3.so-3.0*
+%{_libdir}/gstreamer-1.0/libcluttergst3.so
