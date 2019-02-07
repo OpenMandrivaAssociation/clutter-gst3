@@ -76,10 +76,10 @@ Standalone gstreamer plugin for %{name}.
 	--enable-gtk-doc \
 	--enable-introspection
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %{_libdir}/lib%{oname}-%{api}.so.%{major}*
