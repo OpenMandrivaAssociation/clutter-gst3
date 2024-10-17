@@ -15,7 +15,7 @@ Version:	3.0.27
 Release:	2
 License:	LGPLv2+
 Group:		Graphics
-Url:		http://clutter-project.org/
+Url:		https://clutter-project.org/
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/clutter-gst/%{url_ver}/%{oname}-%{version}.tar.xz
 
 BuildRequires:	gtk-doc
